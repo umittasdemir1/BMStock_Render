@@ -1,4 +1,5 @@
-
+if not data:
+    return jsonify({"image_url": "Geçersiz veri"}), 400
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
