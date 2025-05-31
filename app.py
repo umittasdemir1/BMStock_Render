@@ -19,7 +19,7 @@ def get_image():
     data = request.get_json()
     urun_adi = data.get("urun_adi", "")
     renk = data.get("renk", "")
-    kategori = data.get("kategori", "gomlek")
+    kategori = data.get("kategori", "")
 
     slug_url = f"https://www.bluemint.com/tr/{slugify(urun_adi)}-{slugify(renk)}-{slugify(kategori)}/"
     headers = {"User-Agent": "Mozilla/5.0"}
